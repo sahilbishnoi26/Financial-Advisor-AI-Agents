@@ -1,7 +1,7 @@
 # Multi-Agent Financial & Web Research System
 
 ## Description
-This project demonstrates how to create and orchestrate multiple AI agents—one specialized in financial analysis and another in web research using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses.
+This project demonstrates how to create and orchestrate multiple AI agents, one specialized in financial analysis and another in web research, using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses.
 
 ## Features
 - **Financial Analyst Agent**: Fetches real-time stock data, fundamentals, and analyst recommendations using `YFinanceTools`.
