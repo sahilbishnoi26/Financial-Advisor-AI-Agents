@@ -63,6 +63,7 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
      Compare Nvidia and Tesla stocks, give recommendations.
      ```
    - Outputs will include tabular comparisons, references from DuckDuckGo, and relevant financial insights.
+   ![alt text](https://github.com/sahilbishnoi26/financial_agents_AI_team/blob/main/financial_agents_reponse.png)
 
 ## Troubleshooting
 - **Issue**: Web Search Tool Error  
