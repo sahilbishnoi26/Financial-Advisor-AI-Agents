@@ -38,13 +38,11 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
    - Create a `.env` file in the root directory and add the required API keys. Example:
      ```
      OPENAI_API_KEY=your_openai_api_key_here
-     YFINANCE_API_KEY=your_yfinance_api_key_here
-     DUCKDUCKGO_API_KEY=your_duckduckgo_api_key_here
      ```
 
 ## Usage
 1. **Configure Agents**  
-   - Open `main.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
+   - Open `financial_agents.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
 
 2. **Modify the Query**  
    - Update the question in `agents_team.print_response()` to ask what you'd like. For example:
@@ -55,7 +53,7 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 3. **Run the Project**  
    - Run the script:
      ```bash
-     python main.py
+     python financial_agents.py
      ```
 
 4. **Interact with the Agents**  
@@ -67,11 +65,11 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 
 ## Troubleshooting
 - **Issue**: Failure to Retrieve Stock Data  
-  - **Solution**: Check your internet connection and confirm `YFinanceTools` is installed.
+  - **Solution**: Ensure the `YFinanceTools` API key is not required (default behavior should work without a key).
 - **Issue**: Web Search Tool Error  
-  - **Solution**: Ensure there are no firewall restrictions blocking DuckDuckGo.
+  - **Solution**: Confirm there are no firewall restrictions blocking DuckDuckGo (API key not required).
 - **Issue**: Missing or Incorrect API Keys  
-  - **Solution**: Verify your `.env` file contains valid API keys for all tools.
+  - **Solution**: Verify your `.env` file contains a valid `OPENAI_API_KEY`.
 - **Issue**: Script Fails to Run  
   - **Solution**: Make sure the virtual environment is activated and dependencies are installed (`pip install -r requirements.txt`).
 
