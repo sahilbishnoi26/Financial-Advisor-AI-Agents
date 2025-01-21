@@ -1,0 +1,11 @@
+phidata
+groq
+yfinance
+openai
+packaging
+duckduckgo-search
+phidata
+sqlalchemy
+fastapi[standard]
+streamlit
+gradio
