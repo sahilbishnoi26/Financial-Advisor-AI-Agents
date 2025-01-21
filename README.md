@@ -1,4 +1,4 @@
-# Multi-Agent Financial & Web Research System
+# Multi-Agent AI Financial Advisors
 
 ## Description
 This project demonstrates how to create and orchestrate multiple AI agents—one specialized in financial analysis and another in web research—using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses. The code also includes optional support for open-source models from Groq, which can be uncommented and configured as needed.
@@ -38,6 +38,7 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
    - Create a `.env` file in the root directory and add the required API keys. Example:
      ```
      OPENAI_API_KEY=your_openai_api_key_here
+     GROQ_API_KEY=your_openai_api_key_here
      ```
 
 ## Usage
@@ -64,8 +65,6 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
    - Outputs will include tabular comparisons, references from DuckDuckGo, and relevant financial insights.
 
 ## Troubleshooting
-- **Issue**: Failure to Retrieve Stock Data  
-  - **Solution**: Ensure the `YFinanceTools` API key is not required (default behavior should work without a key).
 - **Issue**: Web Search Tool Error  
   - **Solution**: Confirm there are no firewall restrictions blocking DuckDuckGo (API key not required).
 - **Issue**: Missing or Incorrect API Keys  
