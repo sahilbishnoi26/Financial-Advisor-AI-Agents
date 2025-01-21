@@ -41,7 +41,7 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 2. **Modify the Query**  
    - Update the question in `agents_team.print_response()` to ask what you'd like. For example:
      ```python
-     agents_team.print_response("What are the latest market trends in AI?")
+     agents_team.print_response("Compare Nvidia and Tesla stocks, give recommendations")
      ```
 
 3. **Run the Project**  
