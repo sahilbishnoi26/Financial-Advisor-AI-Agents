@@ -36,7 +36,7 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 
 ## Usage
 1. **Configure Agents**  
-   - Open `main.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
+   - Open `financial_agents.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
 
 2. **Modify the Query**  
    - Update the question in `agents_team.print_response()` to ask what you'd like. For example:
@@ -47,15 +47,8 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 3. **Run the Project**  
    - Run the script:
      ```bash
-     python main.py
+     python financial_agents.py
      ```
-
-4. **Interact with the Agents**  
-   - Example query:
-     ```text
-     Compare Nvidia and Tesla stocks, give recommendations.
-     ```
-   - Outputs will include tabular comparisons, references from DuckDuckGo, and relevant financial insights.
 
 ## Troubleshooting
 - **Issue**: Failure to Retrieve Stock Data  
