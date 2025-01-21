@@ -1,7 +1,7 @@
 # Multi-Agent AI Financial Advisors
 
 ## Description
-This project demonstrates how to create and orchestrate multiple AI agents—one specialized in financial analysis and another in web research—using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses. The code also includes optional support for open-source models from Groq, which can be uncommented and configured as needed.
+This project demonstrates how to create and orchestrate multiple AI agents, one specialized in financial analysis and another in web research, using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses. The code also includes optional support for open-source models from Groq, which can be uncommented and configured as needed.
 
 ## Features
 - **Financial Analyst Agent**: Fetches real-time stock data, fundamentals, and analyst recommendations using `YFinanceTools`.
