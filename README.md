@@ -34,29 +34,44 @@ This project demonstrates how to create and orchestrate multiple AI agents—one
 3. **Install Dependencies**  
    - `pip install -r requirements.txt`
 
+4. **Set Up Environment Variables**  
+   - Create a `.env` file in the root directory and add the required API keys. Example:
+     ```
+     OPENAI_API_KEY=your_openai_api_key_here
+     YFINANCE_API_KEY=your_yfinance_api_key_here
+     DUCKDUCKGO_API_KEY=your_duckduckgo_api_key_here
+     ```
+
 ## Usage
 1. **Configure Agents**  
-   - Open `financial_agents.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
+   - Open `main.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
 
 2. **Modify the Query**  
    - Update the question in `agents_team.print_response()` to ask what you'd like. For example:
      ```python
-     agents_team.print_response("Compare Nvidia and Tesla stocks, give recommendations")
+     agents_team.print_response("What are the latest market trends in AI?")
      ```
 
 3. **Run the Project**  
    - Run the script:
      ```bash
-     python financial_agents.py
+     python main.py
      ```
+
+4. **Interact with the Agents**  
+   - Example query:
+     ```text
+     Compare Nvidia and Tesla stocks, give recommendations.
+     ```
+   - Outputs will include tabular comparisons, references from DuckDuckGo, and relevant financial insights.
 
 ## Troubleshooting
 - **Issue**: Failure to Retrieve Stock Data  
   - **Solution**: Check your internet connection and confirm `YFinanceTools` is installed.
 - **Issue**: Web Search Tool Error  
   - **Solution**: Ensure there are no firewall restrictions blocking DuckDuckGo.
-- **Issue**: Incorrect or Missing Model ID  
-  - **Solution**: Verify the model ID (`gpt-4o-mini` or `llama-3.3-70b-versatile`) and ensure any required API keys are properly set.
+- **Issue**: Missing or Incorrect API Keys  
+  - **Solution**: Verify your `.env` file contains valid API keys for all tools.
 - **Issue**: Script Fails to Run  
   - **Solution**: Make sure the virtual environment is activated and dependencies are installed (`pip install -r requirements.txt`).
 
