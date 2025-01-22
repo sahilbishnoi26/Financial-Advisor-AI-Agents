@@ -20,9 +20,10 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
 
 ## Installation
 1. **Clone the Repository**  
-   - `git clone https://github.com/your-username/multi-agent-financial-web-research.git`
-   - `cd multi-agent-financial-web-research`
-
+     ```
+     git clone https://github.com/your-username/Financial-Advisor-AI-Agents.git`
+     cd multi-agent-financial-web-research`
+     ```
 2. **Create and Activate a Virtual Environment**  
    - On Windows:  
      ```
@@ -38,11 +39,12 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
      ```
      pip install -r requirements.txt`
      ```
-5. **Set Up Environment Variables**  
+4. **Set Up Environment Variables**  
    - Create a `.env` file in the root directory and add the required API keys. Example:
      ```
      OPENAI_API_KEY=your_openai_api_key_here
      GROQ_API_KEY=your_openai_api_key_here
+     SERPER_API_KEY=your_api_key_here
      ```
 
 ## Usage
