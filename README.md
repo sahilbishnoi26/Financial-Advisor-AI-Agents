@@ -35,9 +35,10 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
      source venv/bin/activate
      ```
 3. **Install Dependencies**  
-   - `pip install -r requirements.txt`
-
-4. **Set Up Environment Variables**  
+     ```
+     pip install -r requirements.txt`
+     ```
+5. **Set Up Environment Variables**  
    - Create a `.env` file in the root directory and add the required API keys. Example:
      ```
      OPENAI_API_KEY=your_openai_api_key_here
