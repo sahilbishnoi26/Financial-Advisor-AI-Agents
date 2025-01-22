@@ -25,12 +25,15 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
 
 2. **Create and Activate a Virtual Environment**  
    - On Windows:  
-     - `python -m venv venv`  
-     - `venv\Scripts\activate`
+     ```
+     python -m venv venv 
+     venv\Scripts\activate
+     ```
    - On macOS/Linux:  
-     - `python3 -m venv venv`  
-     - `source venv/bin/activate`
-
+     ```
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
 3. **Install Dependencies**  
    - `pip install -r requirements.txt`
 
