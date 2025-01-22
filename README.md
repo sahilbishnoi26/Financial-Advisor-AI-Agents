@@ -44,7 +44,6 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
      ```
      OPENAI_API_KEY=your_openai_api_key_here
      GROQ_API_KEY=your_openai_api_key_here
-     SERPER_API_KEY=your_api_key_here
      ```
 
 ## Usage
