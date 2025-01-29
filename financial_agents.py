@@ -7,8 +7,9 @@ from phi.tools.yfinance import YFinanceTools  # Tool for retrieving financial da
 # Define the Financial Analyst agent
 financial_agent = Agent(
     name="Financial Analyst",  # The name of the agent for identification and role definition.
+    model=Groq(id="deepseek-r1-distill-llama-70b"),
     # model=Groq(id="llama-3.3-70b-versatile"),  # Optional open-source Groq model
-    model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat for natural language responses.
+    # model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat for natural language responses.
     tools=[  # Adding tools specific to financial analysis tasks.
         YFinanceTools(
             stock_price=True,  # Enables fetching real-time stock price data.
@@ -24,8 +25,9 @@ financial_agent = Agent(
 # Define the Web Researcher agent
 web_researcher = Agent(
     name="Web Researcher",  # The name of the agent for identification and role definition.
+    model=Groq(id="deepseek-r1-distill-llama-70b"),
     # model=Groq(id="llama-3.3-70b-versatile"),  # Optional open-source Groq model
-    model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat for natural language responses.
+    # model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat for natural language responses.
     tools=[DuckDuckGo()],  # Adding DuckDuckGo for conducting web-based research.
     show_tool_calls=True,  # Enables logging of tool usage for transparency and debugging.
     markdown=True,  # Outputs the agent's responses in Markdown format for improved readability.
@@ -35,8 +37,9 @@ web_researcher = Agent(
 # Combine both agents into a collaborative team
 agents_team = Agent(
     team=[financial_agent, web_researcher],  # A team consisting of the Financial Analyst and Web Researcher agents.
+    model=Groq(id="deepseek-r1-distill-llama-70b"),
     # model=Groq(id="llama-3.3-70b-versatile"),  # Optional open-source Groq model
-    model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat to orchestrate team responses.
+    # model=OpenAIChat(id="gpt-4o-mini"),  # Using OpenAIChat for natural language responses.
     show_tool_calls=True,  # Enables logging of tool usage for transparency and debugging.
     markdown=True,  # Outputs the team's responses in Markdown format for improved readability.
     instructions=[  # Combined instructions for the team to ensure consistent outputs.
