@@ -13,7 +13,7 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
 ## Technologies Used
 - **Phi**: For creating, orchestrating, and configuring AI agents.
 - **OpenAIChat (gpt-4o-mini)**: AI model for generating text-based responses and performing NLP tasks.
-- UPDATE: DeepSeek-R1-distill-llama-70b: Uses State of the Art LLM via Groq API replacing `llama-3.3-70b-versatile`.
+- UPDATE: `DeepSeek-R1-distill-llama-70b`: Uses State of the Art LLM via Groq API replacing `llama-3.3-70b-versatile`.
 - **YFinanceTools**: Fetches stock prices, analyst recommendations, and fundamental data from Yahoo Finance.
 - **DuckDuckGo**: Tool for searching the web and retrieving the latest information.
 - **Python**: The primary programming language driving the solution logic.
