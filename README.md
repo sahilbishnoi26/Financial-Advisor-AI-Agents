@@ -13,7 +13,7 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
 ## Technologies Used
 - **Phi**: For creating, orchestrating, and configuring AI agents.
 - **OpenAIChat (gpt-4o-mini)**: AI model for generating text-based responses and performing NLP tasks.
-- **Groq**: Optional support for open-source models such as `llama-3.3-70b-versatile`.
+- UPDATE: DeepSeek-R1-distill-llama-70b: Uses State of the Art LLM via Groq API replacing `llama-3.3-70b-versatile`.
 - **YFinanceTools**: Fetches stock prices, analyst recommendations, and fundamental data from Yahoo Finance.
 - **DuckDuckGo**: Tool for searching the web and retrieving the latest information.
 - **Python**: The primary programming language driving the solution logic.
@@ -77,5 +77,3 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
   - **Solution**: Verify your `.env` file contains a valid `OPENAI_API_KEY`.
 - **Issue**: Script Fails to Run  
   - **Solution**: Make sure the virtual environment is activated and dependencies are installed (`pip install -r requirements.txt`).
-
-Enjoy using this Multi-Agent System for financial analysis and web research!
