@@ -1,13 +1,13 @@
 # Multi-Agent AI Financial Advisors
 
 ## Description
-This project demonstrates how to create and orchestrate multiple AI agents, one specialized in financial analysis and another in web research, using **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses. The code also includes optional support for open-source models from Groq, which can be uncommented and configured as needed.
+This project demonstrates how to create and orchestrate multiple AI agents, one specialized in financial analysis and another in web research, using **UPDATE: SOTA DeepSeek R1 open-sorce model via Groq** replacing **OpenAIChat (gpt-4o-mini)** to provide context-aware, natural language responses.
 
 ## Features
 - **Financial Analyst Agent**: Fetches real-time stock data, fundamentals, and analyst recommendations using `YFinanceTools`.
 - **Web Research Agent**: Gathers fresh information via `DuckDuckGo`.
 - **Agent Teaming**: Multiple agents collaborate to combine insights into a unified response.
-- **Customizable AI Models**: Supports OpenAIChat (`gpt-4o-mini`) and optional open-source models from Groq (`llama-3.3-70b-versatile`).
+- **AI Models**: Uses `DeepSeek-R1-distill-llama-70b` with optional support for other models like OpenAIChat (`gpt-4o-mini`) and Groq (`llama-3.3-70b-versatile`).
 - **Dynamic Questions**: Easily modify the query to get responses tailored to your needs.
 
 ## Technologies Used
@@ -48,8 +48,8 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
 
 ## Usage
 1. **Configure Agents**  
-   - Open `financial_agents.py` to edit model configurations, tools, or instructions. Uncomment the Groq model line to use an open-source model (`Groq(id="llama-3.3-70b-versatile")`).
-
+   - Open `financial_agents.py` to edit model configurations, tools, or instructions.
+     
 2. **Modify the Query**  
    - Update the question in `agents_team.print_response()` to ask what you'd like. For example:
      ```python
@@ -68,7 +68,7 @@ This project demonstrates how to create and orchestrate multiple AI agents, one 
      Compare Nvidia and Tesla stocks, give recommendations.
      ```
    - Outputs will include tabular comparisons, references from DuckDuckGo, and relevant financial insights.
-   ![alt text](https://github.com/sahilbishnoi26/financial_agents_AI_team/blob/main/financial_agents_reponse.png)
+   ![alt text](https://github.com/sahilbishnoi26/financial_agents_AI_team/blob/main/pic1.png)
 
 ## Troubleshooting
 - **Issue**: Web Search Tool Error  
